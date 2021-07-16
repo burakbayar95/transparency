@@ -1,6 +1,60 @@
-import React from 'react'
+import React, { Component } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+export default class Table extends Component {
+  render() {
+    return (
+      
+      <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Tarih</th>
+          <th scope="col">Toplam Miktar</th>
+          <th scope="col">Toplam Fiyat</th>
+          <th scope="col">Ağırlıklı Ortalama Fiyat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+      </tbody>
+    </table>
+      
+    )
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+import React, { Component } from 'react'
 
 export default function Table() {
+  
+  
+ 
 
     fetch(
         "https://seffaflik.epias.com.tr/transparency/service/market/intra-day-trade-history?endDate=2020-02-26&startDate=2020-02-25"
@@ -87,3 +141,5 @@ export default function Table() {
         </div>
     )
 }
+
+*/
