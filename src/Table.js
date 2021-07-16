@@ -3,9 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default class Table extends Component {
   render() {
+    //console.log(this.props.object)
+    //console.log(this.props.ex)
     return (
-      
-      <table class="table">
+     
+      <table className="table">
       <thead>
         <tr>
           <th scope="col">Tarih</th>
@@ -16,13 +18,20 @@ export default class Table extends Component {
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+
+
+          <th scope="row">{this.props.dates}</th>
+          <td>{this.props.Fquantity}</td>
+          <td>{this.props.FPrice}</td>
+          <td>{this.props.Weight}</td>
+         
+
+
+
         </tr>
       </tbody>
     </table>
+
       
     )
   }
